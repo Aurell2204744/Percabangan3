@@ -1,0 +1,25 @@
+package latpercabangan;
+
+import java.util.Scanner;
+
+public class LatPercabangan {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+       
+        System.out.println("Masukkan 3 angka:");
+        int angka1 = input.nextInt();
+        int angka2 = input.nextInt();
+        int angka3 = input.nextInt();
+        
+        if (angka1 >= 1000 && angka1 <= 9999 &&
+            angka2 >= 1000 && angka2 <= 9999 &&
+            angka3 >= 1000 && angka3 <= 9999) {
+            System.out.println("Semua angka adalah ribuan.");
+        } else {
+            System.out.println("Tidak semua angka adalah ribuan.");
+        }
+        
+        input.close();
+    }
+}
