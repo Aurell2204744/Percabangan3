@@ -1,0 +1,27 @@
+package latpercabangan;
+
+import java.util.Scanner;
+
+public class LatPercabangan2 {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        System.out.println("Masukkan tiga angka:");
+        int angka1 = input.nextInt();
+        int angka2 = input.nextInt();
+        int angka3 = input.nextInt();
+        
+        int nilaiTerbesar = angka1;
+        if (angka2 > nilaiTerbesar) {
+            nilaiTerbesar = angka2;
+        }
+        if (angka3 > nilaiTerbesar) {
+            nilaiTerbesar = angka3;
+        }
+        
+        System.out.println("Nilai terbesar adalah: " + nilaiTerbesar);
+        
+        input.close();
+    }
+}
